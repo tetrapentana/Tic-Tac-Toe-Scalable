@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  
+  
+<link rel='stylesheet prefetch' href='src/bootstrap.css'>
+
+<link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+    <div id="tic-tac-toe">
+        <div id="cont1">
+            <h1>Tic Tac Toe</h1>
+            <h3>Scalable</h3>
+        </div>
+        <div id="score" >
+        <div class="score">
+        <div id="score-board">
+            <label>Player X:</label>
+            <span id="score-x"> 0 </span>
+            <label> time(s)</label>
+        </div>
+        <div id="score-board">
+            <label>Player O: </label>
+            <span id="score-o">  0 </span>
+            <label> time(s) </label>
+        </div>
+        </div>
+        <div id="gameBoard">
+        <div class="form-group">
+            <label class="select" for="boardSize"> Select Boardsize</label>
+            <select class="form-control" id="boardSize" type="number" min="3" max="12">
+                <option>3 x 3</option>
+                <option>4 x 4</option>
+                <option>5 x 5</option>
+                <option>6 x 6</option>
+                <option>7 x 7</option>
+                <option>8 x 8</option>
+                <option>9 x 9</option>
+                <option>10 x 10</option>
+                <option>11 x 11</option>
+                <option>12 x 12</option>
+            </select>
+        </div>
+        <div class="btn-group">
+            <button id="starting" type="button" class="btn btn-outline-primary">Play</button>    
+        </div>
+        </div>
+        <div class="game-board">
+            <div class="game-start">
+                <div class="start"></div>
+            </div>
+            <div id="playerTurn"></div>
+            <div id="game"></div>
+        </div>
+        <div class="btn-group">
+           <button type="button" class="btn btn-outline-info" id="resetting">Reset</button>
+        </div>
+    </div>
+
+
+<script src='src/jquery.min.js'></script>
+<script  src="index.js"></script>
+  
+</body>
+  
+</html>
+
+
